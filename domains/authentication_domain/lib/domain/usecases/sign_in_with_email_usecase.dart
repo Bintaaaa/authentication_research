@@ -5,11 +5,11 @@ import 'package:common/utils/response/error/failure_response.dart';
 import 'package:common/utils/usecase/usecase.dart';
 import 'package:dependencies/dartz/dartz.dart';
 
-class SignInUsecase
+class SignInWithEmailUsecase
     extends UseCase<SignInResponseEntity, SignInWithEmailBodyEntity> {
   final AuthenticationRepository authenticationRepository;
 
-  const SignInUsecase({
+  const SignInWithEmailUsecase({
     required this.authenticationRepository,
   });
 
