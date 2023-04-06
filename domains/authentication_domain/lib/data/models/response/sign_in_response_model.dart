@@ -16,21 +16,3 @@ class SignInResponseModel {
     );
   }
 }
-
-class SignInData {
-  SignInData({
-    required this.access,
-    required this.timeExpired,
-    required this.timeFormat,
-  });
-
-  final String access;
-  final int timeExpired;
-  final String timeFormat;
-
-  factory SignInData.fromJson(Map<String, dynamic> json) => SignInData(
-        access: json["access"],
-        timeExpired: json["time_expired"],
-        timeFormat: json["time_format"],
-      );
-}
