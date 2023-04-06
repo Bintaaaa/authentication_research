@@ -3,7 +3,7 @@ import 'package:authentication_domain/data/models/body/sign_in_with_email_body_m
 import 'package:authentication_domain/data/models/body/sign_up_body_model.dart';
 import 'package:authentication_domain/data/models/response/sign_in_response_model.dart';
 import 'package:authentication_domain/data/models/response/sign_up_response_model.dart';
-import 'package:common/constants/constan_values.dart';
+import 'package:common/constants/constans_values.dart';
 import 'package:dependencies/dio/dio.dart';
 
 abstract class AuthenticationRemoteDatasource<T, K>
@@ -31,7 +31,7 @@ class AuthenticationRemoteDatasourceImpl
       {required SignInWithEmailBodyModel signInBodyModel}) async {
     try {
       final response = await dio.post(
-        ConstanValues.apiConstans.login,
+        ConstansValues.apiConstans.login,
         data: signInBodyModel.toJson(),
       );
 
@@ -49,7 +49,7 @@ class AuthenticationRemoteDatasourceImpl
   }) async {
     try {
       final response = await dio.post(
-        ConstanValues.apiConstans.register,
+        ConstansValues.apiConstans.register,
         data: signUpBodyModel.toJson(),
       );
       return SignUpReponseModel.fromJson(
