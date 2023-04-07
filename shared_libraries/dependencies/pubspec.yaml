@@ -15,7 +15,8 @@ dependencies:
   equatable: ^2.0.3
   flutter_bloc: ^8.0.1
   get_it: ^7.2.0
-  flutter_pretty_dio_logger: ^2.0.3
+  lottie: ^2.3.2
+  pretty_dio_logger: ^1.1.1
   
 
 dev_dependencies:
