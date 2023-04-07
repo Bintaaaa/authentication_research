@@ -16,7 +16,7 @@ class SignInWithEmailUsecase
   @override
   Future<Either<FailureResponse, SignInResponseEntity>> call(
           SignInWithEmailBodyEntity params) async =>
-      authenticationRepository.sigInWithEmail(
+      await authenticationRepository.sigInWithEmail(
         signInBodyEntity: params,
       );
 }
