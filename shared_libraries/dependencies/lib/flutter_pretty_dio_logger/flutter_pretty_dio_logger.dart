@@ -1,1 +1,1 @@
-export 'package:flutter_pretty_dio_logger/flutter_pretty_dio_logger.dart';
+export 'package:pretty_dio_logger/pretty_dio_logger.dart';
