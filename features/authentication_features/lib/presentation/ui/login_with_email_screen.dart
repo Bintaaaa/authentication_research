@@ -3,6 +3,7 @@ import 'package:authentication_features/presentation/bloc/sign_in/sign_in_bloc.d
 import 'package:common/components/bottom_sheet_show_alert.dart';
 import 'package:common/components/snackbar_show_alert.dart';
 import 'package:dependencies/bloc/bloc.dart';
+import 'package:dependencies/lottie/lottie.dart';
 import 'package:flutter/material.dart';
 
 class LoginWithEmail extends StatefulWidget {
@@ -59,11 +60,18 @@ class _LoginWithEmailState extends State<LoginWithEmail> {
               Navigator.pop(context);
               BottomSheetShowAlert.show(
                 context,
+                image: Lottie.asset(
+                  "assets/alert_failed.json",
+                ),
                 content: const Text("Gagal melakukan sign in"),
               );
             } else if (state is SignInSuccess) {
+              Navigator.pop(context);
               BottomSheetShowAlert.show(
                 context,
+                image: Lottie.asset(
+                  "assets/alert_success.json",
+                ),
                 content: const Text("Berhasil melakukan sign in"),
               );
             }
