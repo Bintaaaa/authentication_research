@@ -1,7 +1,6 @@
 import 'package:common/constants/constans_values.dart';
 import 'package:core/network/api_interceptor.dart';
 import 'package:dependencies/dio/dio.dart';
-import 'package:dependencies/flutter_pretty_dio_logger/flutter_pretty_dio_logger.dart';
 
 class DioConfig {
   const DioConfig();
