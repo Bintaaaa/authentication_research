@@ -11,7 +11,7 @@ class SignInResponseModel {
 
   factory SignInResponseModel.fromJson(Map<String, dynamic> json) {
     return SignInResponseModel(
-      data: json['data'] ?? '',
+      data: json['data']['access'] ?? '',
       meta: MetaResponse.fromJson(json['meta']),
     );
   }
