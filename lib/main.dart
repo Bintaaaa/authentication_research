@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         create: (context) => SignInBloc(
           usecase: sl(),
         ),
-        child: const LoginWithEmail(),
+        child: const SignWithEmailScreen(),
       ),
     );
   }
