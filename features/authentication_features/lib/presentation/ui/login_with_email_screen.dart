@@ -6,16 +6,23 @@ import 'package:dependencies/bloc/bloc.dart';
 import 'package:dependencies/lottie/lottie.dart';
 import 'package:flutter/material.dart';
 
-class LoginWithEmail extends StatefulWidget {
-  const LoginWithEmail({super.key});
+class SignWithEmailScreen extends StatefulWidget {
+  const SignWithEmailScreen({super.key});
 
   @override
-  State<LoginWithEmail> createState() => _LoginWithEmailState();
+  State<SignWithEmailScreen> createState() => _SignWithEmailScreenState();
 }
 
-class _LoginWithEmailState extends State<LoginWithEmail> {
+class _SignWithEmailScreenState extends State<SignWithEmailScreen> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+
+  @override
+  void dispose() {
+    super.dispose();
+    emailController.dispose();
+    passwordController.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
